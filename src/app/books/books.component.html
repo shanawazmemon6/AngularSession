@@ -1,2 +1,3 @@
 <div *ngIf="book">{{book}}</div>
+<input  (keyup.enter)="displayBook($event)">
 <button (click)="clearBookValue()">Clear</button>
