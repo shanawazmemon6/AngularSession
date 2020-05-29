@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-books',
@@ -8,11 +8,18 @@ import {Component, Input, OnInit} from '@angular/core';
 export class BooksComponent implements OnInit {
 
   @Input()
-  book:string
+  book: string;
 
-  constructor() { }
+  @Output()
+  clear: EventEmitter<any> = new EventEmitter<any>();
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  clearBookValue() {
+    this.clear.emit();
+  }
 }
