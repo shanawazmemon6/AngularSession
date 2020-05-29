@@ -5,10 +5,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  bookData: any="The Ramesh Book"
 
-  inputData
-
-  inputKeyUp($event) {
-    this.inputData=$event.target.value;
-  }
 }
