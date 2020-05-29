@@ -5,10 +5,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  red_circle_aria="This is a red circle";
 
+  inputData
 
-
-
-
+  inputKeyUp($event) {
+    this.inputData=$event.target.value;
+  }
 }
