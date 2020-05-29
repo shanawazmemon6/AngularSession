@@ -5,16 +5,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'application';
-  empJson= {
-    'id': '1234',
-    'name': 'Ramesh',
-    'current': new Date(),
-    'isOnline':true
-  };
-
-  listData = ['Ramesh', 'Suresh', 'Mahesh'];
-  myCustom="blue";
+  red_circle_aria="This is a red circle";
 
 
 

@@ -1,7 +1,1 @@
-
-<div>
-<div [class.greenCircle]="empJson.isOnline"></div>
-<div [class.redCircle]="!empJson.isOnline"></div>
-  <span>{{empJson.name}}</span> &nbsp;
-  <span>Last Seen : {{empJson.current | date}}</span>
-</div>
+<div [attr.aria-label]="red_circle_aria" class="redCircle"> </div>
