@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +6,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'application';
+  empJson= {
+    'id': '1234',
+    'name': 'Ramesh',
+    'current': new Date(),
+    'isOnline':true
+  };
+
+  listData = ['Ramesh', 'Suresh', 'Mahesh'];
+  myCustom="blue";
+
+
+
+
+
 }
