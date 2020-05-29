@@ -11,10 +11,8 @@ export class BooksComponent implements OnInit {
   book: string;
 
   @Output()
-  display: EventEmitter<string> = new EventEmitter<string>();
+  bookChange: EventEmitter<string> = new EventEmitter<string>();
 
-  @Output()
-  clear: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() {
   }
@@ -23,12 +21,7 @@ export class BooksComponent implements OnInit {
   }
 
 
-
-  clearBookValue() {
-    this.clear.emit();
-  }
-
-  displayBook($event) {
-    this.display.emit($event.target.value)
+  changeBookData($event) {
+    this.bookChange.emit($event.target.value);
   }
 }

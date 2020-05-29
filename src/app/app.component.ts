@@ -6,13 +6,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  bookData: any = 'No Books';
-
-  displayBook($event: string) {
-    this.bookData = $event;
-  }
-
-  clearBook() {
-    this.bookData = null;
-  }
+  bookData
 }
